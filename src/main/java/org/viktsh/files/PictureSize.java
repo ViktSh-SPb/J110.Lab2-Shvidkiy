@@ -2,21 +2,34 @@ package org.viktsh.files;
 
 public class PictureSize {
 
-    private String size;
+    private int heihght;
+    private int width;
 
-    public PictureSize(int width, int height) {
-        setSize(width, height);
+    public PictureSize(int heihght, int width) {
+        this.heihght = heihght;
+        this.width = width;
     }
 
-    public String getSize() {
-        return size;
+    public int getHeihght() {
+        return heihght;
     }
 
-    public void setSize(int width, int height) {
-        if (width > 0 || height > 0) {
-            this.size = (width + "x" + height);
-        } else {
-            throw new IllegalArgumentException("Размеры не должны быть меньше нуля");
-        }
+    public void setHeihght(int heihght) {
+        if(heihght>0 && heihght<=4320){
+            this.heihght = heihght;
+        } else throw new IllegalArgumentException("Некорректное значение высоты изображения");
+
     }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        if(width>0 && width<=7680){
+            this.width = width;
+        } else throw new IllegalArgumentException("Некорректное значение ширины изображения");
+    }
+
+
 }
