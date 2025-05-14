@@ -15,7 +15,7 @@ public class PictureSize {
     }
 
     public void setHeihght(int heihght) {
-        if(heihght>0 && heihght<=4320){
+        if(heihght>0){
             this.heihght = heihght;
         } else throw new IllegalArgumentException("Некорректное значение высоты изображения");
 
@@ -26,10 +26,12 @@ public class PictureSize {
     }
 
     public void setWidth(int width) {
-        if(width>0 && width<=7680){
+        if(width>0){
             this.width = width;
         } else throw new IllegalArgumentException("Некорректное значение ширины изображения");
     }
 
-
+    public String getSize(){
+        return width+"x"+heihght;
+    }
 }
