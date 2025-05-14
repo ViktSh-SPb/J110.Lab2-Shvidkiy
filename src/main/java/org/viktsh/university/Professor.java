@@ -3,7 +3,6 @@ package org.viktsh.university;
 public class Professor extends Person{
     private AcademicDegree academicDegree;
     private String speciality;
-    private static String verb = "teaches";
 
     public Professor(String name, Gender gender, String department, AcademicDegree academicDegree, String speciality) {
         super(name, gender, department);
@@ -20,7 +19,7 @@ public class Professor extends Person{
     }
 
     public static String getVerb() {
-        return verb;
+        return "teaches";
     }
 
     @Override
