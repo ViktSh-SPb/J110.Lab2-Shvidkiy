@@ -34,6 +34,6 @@ public class Multimedia extends File {
     @Override
     public void print() {
         super.print();
-        System.out.print(", " + getContent() + getDuration().getDuration());
+        System.out.print(", " + getContent() + ", " + getDuration());
     }
 }
