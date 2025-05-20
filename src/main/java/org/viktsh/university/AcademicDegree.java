@@ -7,7 +7,8 @@ public enum AcademicDegree {
         this.translate = translate;
     }
 
-    public String getTranslate() {
+    @Override
+    public String toString() {
         return translate;
     }
 }

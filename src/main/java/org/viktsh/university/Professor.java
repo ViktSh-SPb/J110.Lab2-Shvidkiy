@@ -26,6 +26,6 @@ public class Professor extends Person{
     public void print() {
         super.print();
         System.out.println(getVerb() + " at " + getDepartment());
-        System.out.println(getGender().getPronoun() + " has " + getAcademicDegree().getTranslate() + " degree in " + getSpeciality() + ".");;
+        System.out.println(getGender().getPronoun() + " has " + getAcademicDegree() + " degree in " + getSpeciality() + ".");;
     }
 }

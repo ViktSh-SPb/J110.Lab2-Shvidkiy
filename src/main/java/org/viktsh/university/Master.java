@@ -21,6 +21,6 @@ public class Master extends Student{
     @Override
     public void print() {
         super.print();
-        System.out.println(getGender().getPronoun() + " is " + getCourse() + "'th year stage " + getStage().getTranslate() + " student.");
+        System.out.println(getGender().getPronoun() + " is " + getCourse() + "'th year stage " + getStage() + " student.");
     }
 }
