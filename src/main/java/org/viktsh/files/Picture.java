@@ -17,8 +17,7 @@ public class Picture extends File {
     }
 
     @Override
-    public void print() {
-        super.print();
-        System.out.print(", " + getPictureSize().getSize());
+    public String getFileInfo(){
+        return super.getFileInfo()+", "+getPictureSize();
     }
 }

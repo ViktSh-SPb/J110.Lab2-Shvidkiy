@@ -47,14 +47,19 @@ public class File {
         }
     }
     public void print(){
-        System.out.printf("%-30s | %-10s | %s", getName(), getSize(), getFormat());
+        System.out.printf("%-30s │ %10s │ %-66s │", getName(), getSize(), getFileInfo());
     }
     public static void printAll(File[] file) {
-        System.out.printf("%-30s | %-10s | %s\n", "File name", "Size", "Details");
-        System.out.println("-------------------------------+------------+--------------------------------------------------------------------");
+        System.out.println("───────────────────────────────┬────────────┬────────────────────────────────────────────────────────────────────┐");
+        System.out.printf("%-30s │ %-10s │ %-66s │\n", "File name", "Size", "Details");
+        System.out.println("───────────────────────────────┼────────────┼────────────────────────────────────────────────────────────────────┤");
         for (int i = 0; i < file.length; i++) {
             file[i].print();
             System.out.println();
         }
+        System.out.println("───────────────────────────────┴────────────┴────────────────────────────────────────────────────────────────────┘");
+    }
+    public String getFileInfo(){
+        return format;
     }
 }

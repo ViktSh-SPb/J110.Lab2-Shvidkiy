@@ -32,8 +32,7 @@ public class Multimedia extends File {
     }
 
     @Override
-    public void print() {
-        super.print();
-        System.out.print(", " + getContent() + ", " + getDuration());
-    }
+    public String getFileInfo(){
+        return super.getFileInfo()+", "+getContent()+", "+getDuration();
+    };
 }

@@ -19,9 +19,9 @@ public class MainClass
         person[4] = new Master("Jill Lundqvist", Gender.FEMALE, "Jurisprudence", Stage.MASTER, 1);
         person[5] = new Aspirant("Ronals Correa", Gender.MALE, "Computer Science", "Design of a functional programming language");
 
-        System.out.println("+----------------------------+");
+        System.out.println("┌----------------------------┐");
         System.out.println("|\u001B[32m       Контингент ВУЗа      \u001B[0m|");
-        System.out.println("+----------------------------+");
+        System.out.println("└----------------------------┘");
         Person.printAll(person);
 
         File[] file = new File[4];
@@ -30,9 +30,9 @@ public class MainClass
         file[2] = new Multimedia("06-PrettyGirl.mp3", 7893454, "audio", "Eric Clapton, Pretty Girl", "05:28");
         file[3] = new Video("BackToTheFuture1.avi", 1470984192, "video", "Back to the future I, 1985", "01:48:08", 640, 352);
 
-        System.out.println("+----------------------------+");
+        System.out.println("┌----------------------------┐");
         System.out.println("|\u001B[32m           Файлы            \u001B[0m|");
-        System.out.println("+----------------------------+");
+        System.out.println("└----------------------------┘");
 
         File.printAll(file);
         System.out.println();

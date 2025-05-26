@@ -31,7 +31,8 @@ public class PictureSize {
         } else throw new IllegalArgumentException("Некорректное значение ширины изображения");
     }
 
-    public String getSize(){
+    @Override
+    public String toString(){
         return width+"x"+heihght;
     }
 }

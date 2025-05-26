@@ -17,8 +17,8 @@ public class Doc extends File {
     }
 
     @Override
-    public void print() {
-        super.print();
-        System.out.print(", " + getPages());
+    public String getFileInfo(){
+
+        return super.getFileInfo()+", "+getPages()+" pages";
     }
 }
